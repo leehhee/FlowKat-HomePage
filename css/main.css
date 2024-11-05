@@ -45,15 +45,15 @@
 
   html {
     font-size: 62.5%;
-    width: 100vw;
+    width: 100%;
   }
   
   html,
   body {
     scroll-behavior: smooth !important;
-    width: 100vw;
+    /* width: 100vw;
     height: 100vh;
-    overflow-y: scroll;
+    overflow-y: scroll; */
   }
   
   * {
@@ -91,7 +91,7 @@
     word-break: keep-all;
     position: relative;
     transition: background 0.3s;
-    height: 200vh; 
+    height: 100vh; 
     overflow-x: hidden;
   }
   
@@ -126,8 +126,7 @@ h5{
   
   .sc {
     position: relative;
-
-    /*overflow: hidden;*/
+    overflow: hidden;
   
   }
   .sc--full .sc__inner {
@@ -139,7 +138,7 @@ h5{
   }
   @media (max-width: 1440px) {
     .sc__inner {
-      padding: 0 7.2rem;
+      padding: 0 20rem;
     }
   }
   @media (max-width: 1024px) {
@@ -245,6 +244,7 @@ h5{
    
   }
 
+  
 .main-title {
   width: 20%;
   position: absolute; /* 부모 요소 안에서 위치 설정 */
@@ -274,8 +274,8 @@ h5{
   line-height: 150px;
 }
 .main__inner {
-  width: 100vw; /* 전체 뷰포트 너비 */
-  height: 100vh; /* 전체 뷰포트 높이 */
+  /* width: 100vw; 
+  height: 100vh;  */
   display: flex;
   justify-content: center; /* 가로 방향 중앙 정렬 */
   align-items: center; /* 세로 방향 중앙 정렬 */

@@ -1,6 +1,10 @@
-window.addEventListener('load', function() {
-    window.scrollTo(0, 0); // 페이지가 로드되면 스크롤을 맨 위로 초기화
-});
+// window.addEventListener('load', function() {
+//     window.scrollTo(0, 0); // 페이지가 로드되면 스크롤을 맨 위로 초기화
+// });
+
+// $(document).ready(function() {
+//     window.scrollTo(0, 0); // 페이지 로드 후 스크롤 위치를 (0,0)으로 설정
+// });
 
 document.addEventListener('DOMContentLoaded', () => {
     const blackSection = document.querySelector('.black');
@@ -35,23 +39,43 @@ document.addEventListener('DOMContentLoaded', () => {
   
 
 
+// $(document).ready(function() {
+//     const targetSection = $('#target-section'); // 타겟 섹션 선택
+//     const targetOffset = targetSection.offset().top; // 타겟 섹션의 위쪽 위치
+
+//     $(window).on('scroll', function() {
+//         const scrollY = window.scrollY;
+
+//         console.log(scrollY); // 확인용 메시지
+//         if (scrollY > targetOffset) { // 타겟 섹션 위치에서 인버트 시작
+//             $('.header').addClass('header--invert'); // invert 클래스를 추가
+//             console.log('헤더 인버트됨!'); // 확인용 메시지
+//         } else {
+//             $('.header').removeClass('header--invert'); // 인버트 클래스를 제거
+//             console.log('헤더 인버트 해제됨!'); // 확인용 메시지
+//         }
+//     });
+// });
+
 $(document).ready(function() {
-    const targetSection = $('#target-section'); // 타겟 섹션 선택
-    const targetOffset = targetSection.offset().top; // 타겟 섹션의 위쪽 위치
-
+    const header = $('.header'); // 헤더 요소를 변수로 저장
+    const viewportHeight = $(window).height(); // 뷰포트의 높이(100vh)
+    
     $(window).on('scroll', function() {
-        const scrollY = window.scrollY;
+        const scrollY = $(window).scrollTop(); // 현재 스크롤 위치
 
-        console.log(scrollY); // 확인용 메시지
-        if (scrollY > targetOffset) { // 타겟 섹션 위치에서 인버트 시작
-            $('.header').addClass('header--invert'); // invert 클래스를 추가
+        console.log('스크롤 위치: ' + scrollY); // 확인용 메시지
+
+        if (scrollY > viewportHeight) { // 스크롤 위치가 100vh를 넘으면
+            header.addClass('header--invert'); // 헤더에 'header--invert' 클래스 추가
             console.log('헤더 인버트됨!'); // 확인용 메시지
         } else {
-            $('.header').removeClass('header--invert'); // 인버트 클래스를 제거
+            header.removeClass('header--invert'); // 헤더에서 'header--invert' 클래스 제거
             console.log('헤더 인버트 해제됨!'); // 확인용 메시지
         }
     });
 });
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
