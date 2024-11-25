@@ -305,8 +305,8 @@ h5{
   align-items: center; /* 세로 방향 중앙 정렬 */
   background-color: #000;
   position: relative;
-  width: 100vw; /* 화면 너비 */
-  height: 100vh; /* 화면 높이 */
+  width: 100%; /* 화면 너비 */
+  height: 100%; /* 화면 높이 */
   overflow: visible; /* 자식 요소가 잘리지 않도록 */
 }
 
@@ -702,11 +702,11 @@ h5{
 .flow, .meer {
     width: 25rem;
     height: 25rem;
-    border-radius: 200px;
-    /* border: 2px solid #f06400; */
+    border-radius: 50%;
+    border: 2px solid #f06400;
     display: flex;
     flex-direction: column; 
-
+    aspect-ratio: 1;
 }
 
 .flowmeer img{
@@ -771,8 +771,8 @@ flex-direction: row;
 
 
 
-/* 
-@media (max-width: 2560px) {
+
+/* @media (max-width: 2560px) {
   .sc__inner {
     padding: 0 30rem;
     min-height: auto;
@@ -785,7 +785,11 @@ flex-direction: row;
     padding: 3rem 30rem; 
   }
  
-} */
+} 
+ */
+
+
+
 
 
 @media (max-width: 1440px) {
@@ -907,6 +911,13 @@ flex-direction: row;
 
 } 
 
+
+
+
+
+
+
+
 @media (max-width: 1024px) {
   .sc__inner {
     padding: 0 10rem;
@@ -921,6 +932,13 @@ flex-direction: row;
   
   
 }
+
+
+
+/* 
+
+
+
 @media (max-width: 749px) {
   .sc__inner {
     padding: 0 2.4rem;
@@ -961,6 +979,13 @@ flex-direction: row;
 
 }
 
+
+
+
+
+ */
+
+
 @media (max-width: 576px) {
   .sc__inner {
     padding: 0 2.4rem;
@@ -999,39 +1024,36 @@ flex-direction: row;
     grid-column: 1 /2;
     grid-row: 8 / 11;
   }
-
-
   .function_scroll {
     display: flex;
-    overflow-x: auto; /* 가로 스크롤 활성화 */
-    overflow-y: hidden; /* 세로 스크롤 비활성화 */
-    gap: 1.8rem; /* 카드 간의 간격 */
-    padding: 2.4rem 15rem; /* 상하 여백 추가 */
+    overflow-x: auto; // 가로 스크롤 활성화
+    overflow-y: hidden; // 세로 스크롤 비활성화
+    gap: 1.8rem; // 카드 간의 간격
+    padding: 2.4rem 15rem; // 상하 여백 추가
     height: 800px;
-  }
-  .function_card {
-    width: 90vw; /* 필요에 따라 조정 가능 */
+}
+
+.function_card {
+    width: 90vw; // 필요에 따라 조정 가능
     background-color: #fff;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     display: flex;
-    flex-direction: column; /* 세로로 배치 */
-    align-items: center; /* 세로로 배치할 때 가운데 정렬 */
-    height: 600px; /* 필요에 따라 조정 가능 */
-    
+    flex-direction: column; // 세로로 배치
+    align-items: center; // 세로로 배치할 때 가운데 정렬
+    height: 600px; // 필요에 따라 조정 가능
 }
 
 .function_card_title {
     padding: 40px 0 40px 40px;
     display: flex;
-    flex-direction: column; /* 세로로 배치 */
+    flex-direction: column; // 세로로 배치
     gap: 10px;
-    justify-content: flex-start; /* 위쪽으로 정렬 */
+    justify-content: flex-start; // 위쪽으로 정렬
     align-items: flex-start; 
     flex: 1;
-    height: auto; /* 높이를 자동으로 조정 */
-    width: 100%;  /* 부모 너비를 꽉 채우도록 설정 */
-
+    height: auto; // 높이를 자동으로 조정
+    width: 100%; // 부모 너비를 꽉 채우도록 설정
 }
 
 .function_number {
@@ -1047,7 +1069,7 @@ flex-direction: row;
 
 .function_card_title h3 {
     font-size: 4rem;
-    flex: 1; /* 제목 크기에 맞게 flex 값 조정 */
+    flex: 1; // 제목 크기에 맞게 flex 값 조정
 }
 
 .function_card_title p {
@@ -1059,20 +1081,20 @@ flex-direction: row;
     background-color: #FDEEE3;
     border-radius: 0   0 20px 20px;
     object-fit: cover;
-    height: 250px; /* 세로형에서 이미지 높이를 적당히 조절 */
+    height: 250px; // 세로형에서 이미지 높이를 적당히 조절
     flex: 2;
-    width: 100%; /* 이미지가 부모 요소를 꽉 채우게 설정 */
+    width: 100%; // 이미지가 부모 요소를 꽉 채우게 설정
     height: 400px;
 }
 
 .function_img img {
-    max-width: 100%; /* 이미지가 부모 요소에 맞춰서 크기 조정 */
+    max-width: 100%; // 이미지가 부모 요소에 맞춰서 크기 조정
     height: auto; 
 }
 
 .function_button {
   display: flex;
-  /* justify-content: right;  */
+  /* justify-content: right;   */
   justify-content: flex-end;
   gap: 1rem;
   margin-top: 1.9rem;
@@ -1080,15 +1102,13 @@ flex-direction: row;
 }
 
 
-
-
-}
+} 
 
 @media (max-width: 390px) {
   .sc__inner {
     padding: 0 2.4rem;
     min-height: auto;
-  }
+    }
   .sc__title {
     font-size: 5rem;
   }
