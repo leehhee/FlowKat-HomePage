@@ -98,3 +98,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+function toggleMenu() {
+    const menuList = document.querySelector('.header__menu-list');
+    menuList.classList.toggle('active');
+  }
+  

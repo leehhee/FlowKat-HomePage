@@ -84,7 +84,7 @@
   
   body {
     font-size: 1.4rem;
-    min-width: 1024px;
+    /* min-width: 1024px; */
     word-break: keep-all;
     font-family: "Archivo", "Noto Sans KR", sans-serif;
     line-height: 1.33;
@@ -195,7 +195,7 @@ h5{
       font-size: 3rem;
     }
   } */
-
+/* 
   .sc__bg {
     overflow: hidden;
     position: absolute;
@@ -215,7 +215,7 @@ h5{
   .sc__bg-container {
     position: relative;
   }
-
+ */
 
   
 .header{
@@ -270,7 +270,7 @@ h5{
    
   }
 
-  
+ 
 .main-title {
   width: 20%;
   position: absolute; /* 부모 요소 안에서 위치 설정 */
@@ -589,7 +589,10 @@ h5{
     overflow: hidden;
     position: relative;
 }
-
+.ribbon{
+  width: 200px;
+  top: 50%;
+}
 .gs h3{
     color: #000;
     text-align: right;
@@ -950,7 +953,7 @@ flex-direction: row;
 
 @media (max-width: 1024px) {
   .sc__inner {
-    padding: 0 10rem;
+    padding: 0 5vw;
     min-height: auto;
   }
   .sc__title {
@@ -966,8 +969,8 @@ flex-direction: row;
     overflow-x: auto; 
     overflow-y: hidden;
     gap: 1.8rem; 
-    padding: 3rem 10rem;
-    /* height: 800px; */
+    padding: 2rem 5vw;
+        /* height: 800px; */
   }
 
   
@@ -981,7 +984,20 @@ flex-direction: row;
     padding-left: 10rem;
   }
   
-  
+  .flowmeer {
+    gap: 15px;
+    height: 25rem;
+  }
+  .flow, .meer {
+      width: 20rem;
+      height: 20rem;
+  }
+  .flowmeer img {
+      width: 10rem;
+  }
+  .flowmeer h2 {
+      font-size: 2.5rem;
+  }
 }
 @media (max-width: 749px) {
   /* .sc__inner {
@@ -1020,6 +1036,29 @@ flex-direction: row;
       grid-column: 2 /3;
       grid-row: 3 / 3;
   }
+  .flowmeer {
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+    margin-top: 50px;
+}
+.flow, .meer {
+    width: 18rem;
+    height: 18rem;
+}
+.flowmeer img {
+    width: 8rem;
+}
+.flowmeer h2 {
+    font-size: 2rem;
+}
+.header__menu-list {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  background-color: #333;
+}
+
 
 
 }
@@ -1144,8 +1183,23 @@ flex-direction: row;
   gap: 1rem;
   margin-top: 1.9rem;
   padding-left: 2.4rem;
-}
 
+}
+ .flowmeer {
+        gap: 8px;
+        height: auto;
+        margin-top: 20px;
+    }
+    .flow, .meer {
+        width: 16rem;
+        height: 16rem;
+    }
+    .flowmeer img {
+        width: 7rem;
+    }
+    .flowmeer h2 {
+        font-size: 1.8rem;
+    }
 
 
 
@@ -1274,9 +1328,5 @@ flex-direction: row;
     max-width: 100%;
     height: auto; 
 }
-
-
-
-
 
 }
