@@ -50,6 +50,10 @@ $(document).ready(function() {
             console.log('헤더 인버트 해제됨!'); // 확인용 메시지
         }
     });
+    $('.header__hamburger').on('click', function() {
+        $(this).toggleClass('show'); // 햄버거 메뉴 아이콘 토글
+        $('.header__menu-mobile').toggleClass('show'); // 메뉴 토글
+    });
 });
 
 
@@ -98,8 +102,14 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-function toggleMenu() {
-    const menuList = document.querySelector('.header__menu-list');
-    menuList.classList.toggle('active');
-  }
+// DOMContentLoaded 이벤트를 사용하여 페이지 로드 후 실행
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle'); // 햄버거 버튼
+    const menuList = document.querySelector('.header__menu-list'); // 메뉴 목록
+    
+    // 햄버거 버튼 클릭 시 메뉴 보이기/숨기기
+    menuToggle.addEventListener('click', function() {
+      menuList.classList.toggle('active');
+    });
+  });
   

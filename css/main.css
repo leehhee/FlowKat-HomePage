@@ -270,7 +270,96 @@ h5{
    
   }
 
- 
+
+
+
+  .header__hamburger {
+    display: none;
+    cursor: pointer;
+    z-index: 120;
+}
+
+.header__hamburger--inner {
+    position: relative;
+    width: 24px;
+    height: 14px;
+}
+
+.header__hamburger--item {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+
+.header.header--invert .header__hamburger--item {
+  background-color: #000; /* 인버트된 상태에서는 검은색으로 변경 */
+}
+
+.header__hamburger--item.top {
+    top: 0;
+}
+
+.header__hamburger--item.middle {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header__hamburger--item.bottom {
+    bottom: 0;
+}
+
+.header__hamburger.show .header__hamburger--item {
+    background-color: #000 !important;
+}
+
+
+.header__hamburger.show .top {
+    width: 100%;
+    top: 50%;
+    transform: rotate(135deg);
+}
+
+.header__hamburger.show .middle {
+    opacity: 0;
+}
+
+.header__hamburger.show .bottom {
+    top: 50%;
+    transform: rotate(-135deg);
+}
+
+/* 모바일 메뉴 스타일 */
+.header__menu-mobile {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    padding: 70px 24px;
+    box-sizing: border-box;
+    z-index: 110;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 0.4s, opacity 0.4s, visibility 0.4s;
+}
+
+.header__menu-mobile.show {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+}
+
+.header__menu-mobile .header__menu-item {
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 2rem;
+}
+
+
 .main-title {
   width: 20%;
   position: absolute; /* 부모 요소 안에서 위치 설정 */
@@ -998,6 +1087,10 @@ flex-direction: row;
   .flowmeer h2 {
       font-size: 2.5rem;
   }
+  .flowkatfaceword img{
+    width: 20rem;
+  }
+  
 }
 @media (max-width: 749px) {
   /* .sc__inner {
@@ -1007,11 +1100,59 @@ flex-direction: row;
   .sc__title {
     font-size: 5rem;
   }
+/* 
+  .header {
+    transform: translateY(-100%);
+} */
+
+.header__inner {
+    padding: 0 20px;
+}
+
+.header__menu {
+    display: none;
+}
+
+.header__hamburger {
+    display: block;
+}
+
+.header__menu-mobile.show {
+    display: block;
+}
+
+.header__menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.header__menu-link {
+    padding: 1.5rem 0;
+}
+
+
+
+.main_subtitle{
+  color: #fff;
+  font-size: 6rem;
+  text-align: center;
+  padding-top: 150px;
+    
+}
+.main_subtitle span{
+  font-weight: 100;
+}
+.main_subtitle h2{
+  line-height: 8rem;
+}
   .reference__list {
     grid-template-columns: 1fr 1fr;
   }
 
-  
+ 
+
 
   .value__card {
     grid-template-columns: repeat(2, 1fr); 
@@ -1052,15 +1193,9 @@ flex-direction: row;
 .flowmeer h2 {
     font-size: 2rem;
 }
-.header__menu-list {
-  display: none;
-  flex-direction: column;
-  width: 100%;
-  background-color: #333;
+.flowkatfaceword img{
+  width: 20rem;
 }
-
-
-
 }
 
 @media (max-width: 576px) {
@@ -1201,7 +1336,9 @@ flex-direction: row;
         font-size: 1.8rem;
     }
 
-
+    .flowkatfaceword img{
+      width: 15rem;
+    }
 
 }
 
