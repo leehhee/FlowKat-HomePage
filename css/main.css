@@ -360,10 +360,11 @@ h5{
 }
 
 
+
 .main-title {
   width: 20%;
   position: absolute; /* 부모 요소 안에서 위치 설정 */
-  top: 15%; /* 상단에서 20px 떨어지게 설정 */
+  top: 15%; 
   left: 50%; /* 수평 중앙 정렬 */
   transform: translateX(-50%); /* 수평 중앙 정렬을 위한 변환 */
 }
@@ -897,11 +898,21 @@ flex-direction: row;
 
 @media (max-width: 1440px) {
   .sc__inner {
-    padding: 0 20rem;
+    padding: 0 10rem;
     min-height: auto;
   }
   .sc__title {
     font-size: 5.4rem;
+  }
+  .black{
+    width: 80%;
+  }
+  .main-title {
+    top: 25%; 
+  }
+  
+  .main_subtitle h2{
+    line-height: 10rem;
   }
   .reference__list {
     grid-template-columns: 1fr 1fr 1fr;
@@ -938,7 +949,7 @@ flex-direction: row;
     overflow-x: auto; 
     overflow-y: hidden;
     gap: 1.8rem; 
-    padding: 3rem 20rem;
+    padding: 3rem 10rem;
     /* height: 800px; */
   }
 
@@ -1010,9 +1021,8 @@ flex-direction: row;
   /* justify-content: flex-end; */
   gap: 1rem;
   margin-top: 1.9rem;
-  padding-left: 20rem;
+  padding-left: 10rem;
 }
-
 
 .value__card {
   grid-template-columns: repeat(2, 1fr); 
@@ -1044,9 +1054,20 @@ flex-direction: row;
   .sc__inner {
     padding: 0 5vw;
     min-height: auto;
+    
   }
   .sc__title {
     font-size: 4rem;
+  }
+
+  .black{
+    width: 90%;
+  }
+  .main_subtitle h2{
+    line-height: 8rem;
+  }
+  .main-title {
+    top: 30%; 
   }
   .reference__list {
     grid-template-columns: 1fr 1fr;
@@ -1098,13 +1119,20 @@ flex-direction: row;
     min-height: auto;
   } */
   .sc__title {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 /* 
   .header {
     transform: translateY(-100%);
 } */
 
+.black{
+  width: 90%;
+}
+
+.main-title {
+  top: 36%; 
+}
 .header__inner {
     padding: 0 20px;
 }
@@ -1132,6 +1160,9 @@ flex-direction: row;
     padding: 1.5rem 0;
 }
 
+.main-image img{
+  width: 100%;
+}
 
 
 .main_subtitle{
@@ -1204,14 +1235,16 @@ flex-direction: row;
     height: auto;
   }
   .sc__title {
-    font-size: 5rem;
+    font-size: 3rem;
   }
   /* .reference__list {
     justify-items: center;
     grid-template-columns: 1fr ;
     width: 40%;
   }  */
-
+  .main_subtitle h2{
+    line-height: 4rem;
+  }
 
   .value__card {
     grid-template-columns: repeat(1, 1fr); 
@@ -1348,8 +1381,9 @@ flex-direction: row;
     height: auto;
   }
   .sc__title {
-    font-size: 5rem;
+    font-size: 3rem;
   }
+
   /* .reference__list {
     justify-items: center;
     grid-template-columns: 1fr ;
@@ -1464,6 +1498,9 @@ flex-direction: row;
 .function_img img {
     max-width: 100%;
     height: auto; 
+}
+.value__card h3 {
+  font-size: 3rem;
 }
 
 }
