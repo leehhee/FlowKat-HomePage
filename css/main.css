@@ -127,6 +127,7 @@ h5{
   .sc {
     position: relative;
     /* overflow: hidden; */
+    overflow-y: auto;
   }
   .sc--full .sc__inner {
     min-height: 100vh;
@@ -360,13 +361,19 @@ h5{
 }
 
 
-
+.main__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  position: relative;
+  height: 100vh;  /* 화면 전체 높이에 맞추기 */
+  overflow: hidden;  
+}
 .main-title {
+  margin-bottom: 800px;
+  z-index: 10;
   width: 20%;
-  position: absolute; /* 부모 요소 안에서 위치 설정 */
-  top: 15%; 
-  left: 50%; /* 수평 중앙 정렬 */
-  transform: translateX(-50%); /* 수평 중앙 정렬을 위한 변환 */
 }
 
 .face{
@@ -908,8 +915,9 @@ flex-direction: row;
     width: 80%;
   }
   .main-title {
-    top: 25%; 
+    margin-bottom: 600px;
   }
+
   
   .main_subtitle h2{
     line-height: 10rem;
@@ -1067,7 +1075,7 @@ flex-direction: row;
     line-height: 8rem;
   }
   .main-title {
-    top: 30%; 
+    margin-bottom: 470px;
   }
   .reference__list {
     grid-template-columns: 1fr 1fr;
@@ -1131,7 +1139,7 @@ flex-direction: row;
 }
 
 .main-title {
-  top: 36%; 
+  margin-bottom: 350px;
 }
 .header__inner {
     padding: 0 20px;

@@ -40,14 +40,14 @@ $(document).ready(function() {
     $(window).on('scroll', function() {
         const scrollY = $(window).scrollTop(); // 현재 스크롤 위치
 
-        console.log('스크롤 위치: ' + scrollY); // 확인용 메시지
+        // console.log('스크롤 위치: ' + scrollY); // 확인용 메시지
 
         if (scrollY > viewportHeight) { // 스크롤 위치가 100vh를 넘으면
             header.addClass('header--invert'); // 헤더에 'header--invert' 클래스 추가
-            console.log('헤더 인버트됨!'); // 확인용 메시지
+            // console.log('헤더 인버트됨!'); // 확인용 메시지
         } else {
             header.removeClass('header--invert'); // 헤더에서 'header--invert' 클래스 제거
-            console.log('헤더 인버트 해제됨!'); // 확인용 메시지
+            // console.log('헤더 인버트 해제됨!'); // 확인용 메시지
         }
     });
     $('.header__hamburger').on('click', function() {
