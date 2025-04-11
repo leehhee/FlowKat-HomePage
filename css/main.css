@@ -232,7 +232,7 @@ h5{
     filter: invert(1);
   }
   .header--invert .header__menu-item {
-    color: #000;
+    color: #010203;
   }
 
   .header__inner {
@@ -295,7 +295,7 @@ h5{
 }
 
 .header.header--invert .header__hamburger--item {
-  background-color: #000; /* 인버트된 상태에서는 검은색으로 변경 */
+  background-color: #010203; /* 인버트된 상태에서는 검은색으로 변경 */
 }
 
 .header__hamburger--item.top {
@@ -312,7 +312,7 @@ h5{
 }
 
 .header__hamburger.show .header__hamburger--item {
-    background-color: #000 !important;
+    background-color: #010203 !important;
 }
 
 
@@ -356,7 +356,7 @@ h5{
 
 .header__menu-mobile .header__menu-item {
     font-size: 2.5rem;
-    color: #000;
+    color: #010203;
     margin-bottom: 2rem;
 }
 
@@ -365,7 +365,7 @@ h5{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000;
+  background-color: #010203;
   position: relative;
   height: 100vh;  /* 화면 전체 높이에 맞추기 */
   overflow: hidden;  
@@ -400,7 +400,7 @@ h5{
   display: flex;
   justify-content: center; /* 가로 방향 중앙 정렬 */
   align-items: center; /* 세로 방향 중앙 정렬 */
-  background-color: #000;
+  background-color: #010203;
   position: relative;
   /* width: 100vw; 화면 너비 */
   height: 100%;
@@ -584,7 +584,7 @@ h5{
   height:50px;
   position:relative;
   text-indent:-9999px;
-  border: 2px solid #000;
+  border: 2px solid #010203;
   border-radius: 100%;
   cursor: pointer;
 
@@ -596,8 +596,8 @@ h5{
   position:absolute;
   left:55%;
   top:50%;
-  border-left:2px solid #000;
-  border-top:2px solid #000;
+  border-left:2px solid #010203;
+  border-top:2px solid #010203;
   transform:translate(-50%,-50%) rotate(-45deg);
 }
 .arrow-prev:after{
@@ -607,7 +607,7 @@ h5{
   position:absolute;
   top:50%;
   transform:translateY(-50%);
-  background:#000
+  background:#010203
 }
 
 .arrow-next{
@@ -615,7 +615,7 @@ h5{
   height:50px;
   position:relative;
   text-indent:-9999px;
-  border: 2px solid #000;
+  border: 2px solid #010203;
   border-radius: 100%;
   cursor: pointer;
 }
@@ -626,8 +626,8 @@ h5{
   position:absolute;
   left:45%;
   top:50%;
-  border-left:2px solid #000;
-  border-top:2px solid #000;
+  border-left:2px solid #010203;
+  border-top:2px solid #010203;
   transform:translate(-50%,-50%) rotate(135deg);
 }
 .arrow-next:after{
@@ -637,7 +637,7 @@ h5{
   position:absolute;
   top:50%;
   transform:translateY(-50%);
-  background:#000
+  background:#010203
 }
 .arrow-prev:hover,
 .arrow-next:hover {
@@ -691,7 +691,7 @@ h5{
   top: 50%;
 }
 .gs h3{
-    color: #000;
+    color: #010203;
     text-align: right;
     bottom: 1.8rem; 
     left: 1.8rem; 
@@ -775,13 +775,13 @@ h5{
     flex-direction: row;
     padding: 0.2rem 2rem;
     height: 4.8rem;
-    border: 0.2rem solid #000;
+    border: 0.2rem solid #010203;
     font-size: 1.8rem;
     font-weight: 700;
     border-radius: 50px;
   }
   .btn--black {
-    background: #000;
+    background: #010203;
     color: #fff;
   }
   .btn-container {
@@ -827,7 +827,7 @@ h5{
     font-size: 3rem;
     font-weight: 500;
     text-align: center;
-    color: #000;
+    color: #010203;
 }
 
 .plus{
@@ -842,7 +842,7 @@ h5{
 
 .footer {
     padding: 5.8rem 0;
-    background: #000;
+    background: #010203;
     color: #fff;
     font-size: 1.4rem;
     line-height: 1;
