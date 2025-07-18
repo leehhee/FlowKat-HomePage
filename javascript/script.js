@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const blackSection = document.querySelector('.black');
     const orangeSection = document.querySelector('.orange');
@@ -13,23 +11,55 @@ document.addEventListener('DOMContentLoaded', () => {
     const intervalTime = 3000; // 3초
   
     // 반복적으로 섹션을 전환
-    setInterval(() => {
-      if (isBlackVisible) {
-        // 블랙 섹션 사라짐
-        blackSection.classList.remove('visible');
-        // 오렌지 섹션 보이기
-        orangeSection.classList.add('visible');
-      } else {
-        // 오렌지 섹션 사라짐
-        orangeSection.classList.remove('visible');
-        // 블랙 섹션 보이기
-        blackSection.classList.add('visible');
-      }
+    // setInterval(() => {
+    //   if (isBlackVisible) {
+    //     // 블랙 섹션 사라짐
+    //     blackSection.classList.remove('visible');
+    //     // 오렌지 섹션 보이기
+    //     orangeSection.classList.add('visible');
+    //   } else {
+    //     // 오렌지 섹션 사라짐
+    //     orangeSection.classList.remove('visible');
+    //     // 블랙 섹션 보이기
+    //     blackSection.classList.add('visible');
+    //   }
       
-      // 현재 상태 토글
-      isBlackVisible = !isBlackVisible;
-    }, intervalTime);
+    //   // 현재 상태 토글
+    //   isBlackVisible = !isBlackVisible;
+    // }, intervalTime);
   });
+  
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     const blackSection = document.querySelector('.black');
+//     const orangeSection = document.querySelector('.orange');
+    
+//     let isBlackVisible = true;
+  
+//     // 초기 상태로 블랙 섹션 보이기
+//     blackSection.classList.add('visible');
+  
+//     // 섹션 전환 간격 (밀리초 단위)
+//     const intervalTime = 3000; // 3초
+  
+//     // 반복적으로 섹션을 전환
+//     setInterval(() => {
+//       if (isBlackVisible) {
+//         // 블랙 섹션 사라짐
+//         blackSection.classList.remove('visible');
+//         // 오렌지 섹션 보이기
+//         orangeSection.classList.add('visible');
+//       } else {
+//         // 오렌지 섹션 사라짐
+//         orangeSection.classList.remove('visible');
+//         // 블랙 섹션 보이기
+//         blackSection.classList.add('visible');
+//       }
+      
+//       // 현재 상태 토글
+//       isBlackVisible = !isBlackVisible;
+//     }, intervalTime);
+//   });
   
 
 
